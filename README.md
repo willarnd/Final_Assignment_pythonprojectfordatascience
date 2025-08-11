@@ -52,6 +52,13 @@ pip install yfinance requests beautifulsoup4 html5lib pandas plotly
 - **Tesla**: Stock price shows rapid growth after 2019, while revenue also trends upward.
 - **GameStop**: Stock price exhibits a spike in early 2021 (short squeeze), revenue relatively stable but fluctuating seasonally.
 
+## 📂 Files in This Repository
+
+- `Final Assignment-v2.ipynb` → Jupyter Notebook containing all code and explanations.
+- `Grafik tesla.png` → Tesla stock and revenue visualization.
+- `Grafik Gamestop.png` → GameStop stock and revenue visualization.
+- `README.md` → Project documentation.
+
 ---
 **Author:** IBM Data Analyst Capstone Project  
 **Tools Used:** Python, Jupyter Notebook, yfinance, BeautifulSoup, pandas, plotly
