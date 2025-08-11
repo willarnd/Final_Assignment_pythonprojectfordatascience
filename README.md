@@ -1,50 +1,51 @@
-# Final_Assignment_Python Project for Data Science
 
-# Python Project for Data Analyst — Final Assignment (IBM)
+# Stock Data and Revenue Analysis
 
-This repository contains my final project for the **Python Project for Data Analyst** course in the IBM Data Analyst Professional Certificate program.
+This project is part of the IBM Data Analyst Professional Certificate final assignment.  
+It involves extracting, cleaning, and visualizing stock price and revenue data for Tesla and GameStop.
 
 ## Project Overview
-This project demonstrates:
-1. Extracting Tesla stock data using `yfinance`
-2. Web scraping Tesla revenue data
-3. Extracting GameStop stock data using `yfinance`
-4. Web scraping GameStop revenue data
-5. Visualizing Tesla stock price and revenue trends
-6. Visualizing GameStop stock price and revenue trends
-7. Sharing the completed notebook (this repository)
 
-## Environment
-- Python 3.x  
-- Libraries: `yfinance`, `pandas`, `requests`, `beautifulsoup4`, `plotly`  
-  *(optional for exporting images: `kaleido`)*
+The tasks include:
+1. **Extract Tesla Stock Data** using the `yfinance` library.
+2. **Extract Tesla Revenue Data** via web scraping using `requests` and `BeautifulSoup`.
+3. **Extract GameStop Stock Data** using the `yfinance` library.
+4. **Extract GameStop Revenue Data** via web scraping.
+5. **Visualize Tesla Stock Price and Revenue** using the provided `make_graph` function.
+6. **Visualize GameStop Stock Price and Revenue** using the provided `make_graph` function.
+7. **Upload the completed notebook to GitHub**.
 
-## Results
+---
 
-### Q1 — Tesla Stock (first 5 rows)
-See the first 5 rows of `tesla_data`:
-- **File:** `results/tesla_head.md`
+## Final Graph Outputs
 
-### Q2 — Tesla Revenue (last 5 rows)
-- **File:** `results/tesla_revenue_tail.md`
+### Tesla Stock Data and Revenue
+![Tesla Graph](Grafik%20tesla.png)
 
-### Q3 — GameStop Stock (first 5 rows)
-- **File:** `results/gme_head.md`
+### GameStop Stock Data and Revenue
+![GameStop Graph](Grafik%20Gamestop.png)
 
-### Q4 — GameStop Revenue (last 5 rows)
-- **File:** `results/gme_revenue_tail.md`
+---
 
-### Q5 — Tesla Graph (Close Price & Revenue)
-![Tesla Graph](results/tesla_graph.png)
+## Tools and Libraries Used
+- Python 3
+- yfinance
+- pandas
+- requests
+- BeautifulSoup
+- plotly
+- Jupyter Notebook
 
-### Q6 — GameStop Graph (Close Price & Revenue)
-![GameStop Graph](results/gme_graph.png)
+## How to Run
+1. Install the dependencies:
+   ```bash
+   pip install yfinance pandas requests beautifulsoup4 plotly html5lib
+   ```
+2. Open the Jupyter Notebook:
+   ```bash
+   jupyter notebook Final\ Assignment-v2.ipynb
+   ```
+3. Run each cell in order to reproduce the results.
 
-> Note: Graphs display data up to **June 2021**, as per project instructions.
-
-## Main Files
-- `final_assignment.ipynb` — Main Jupyter Notebook
-- `README.md` — Project description, steps, and results
-- `results/` — Tables and graph images for README
-
-Untuk tujuan pembelajaran (educational use).
+## Author
+This notebook was created as part of the IBM Data Analyst Professional Certificate capstone project.
