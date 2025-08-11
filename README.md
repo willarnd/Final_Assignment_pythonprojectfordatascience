@@ -1,51 +1,57 @@
+# Tesla & GameStop Stock and Revenue Analysis
 
-# Stock Data and Revenue Analysis
+This project is part of the IBM Data Analyst Professional Certificate (Final Assignment).  
+It involves extracting stock price data and revenue data for **Tesla (TSLA)** and **GameStop (GME)**, then visualizing the data using Python.
 
-This project is part of the IBM Data Analyst Professional Certificate final assignment.  
-It involves extracting, cleaning, and visualizing stock price and revenue data for Tesla and GameStop.
+## Project Steps
 
-## Project Overview
+### Question 1: Extract Tesla Stock Data
+- Used `yfinance` to create a Ticker object for Tesla (TSLA).
+- Extracted historical stock data (`period="max"`).
+- Reset the index and displayed the first five rows.
 
-The tasks include:
-1. **Extract Tesla Stock Data** using the `yfinance` library.
-2. **Extract Tesla Revenue Data** via web scraping using `requests` and `BeautifulSoup`.
-3. **Extract GameStop Stock Data** using the `yfinance` library.
-4. **Extract GameStop Revenue Data** via web scraping.
-5. **Visualize Tesla Stock Price and Revenue** using the provided `make_graph` function.
-6. **Visualize GameStop Stock Price and Revenue** using the provided `make_graph` function.
-7. **Upload the completed notebook to GitHub**.
+### Question 2: Extract Tesla Revenue Data
+- Used `requests` to scrape the Tesla revenue page.
+- Parsed HTML using `BeautifulSoup`.
+- Extracted the Tesla Quarterly Revenue table into a DataFrame (`tesla_revenue`).
+- Cleaned data by removing `$` and `,` and dropping null values.
 
----
+### Question 3: Extract GameStop Stock Data
+- Used `yfinance` to create a Ticker object for GameStop (GME).
+- Extracted historical stock data (`period="max"`).
+- Reset the index and displayed the first five rows.
 
-## Final Graph Outputs
+### Question 4: Extract GameStop Revenue Data
+- Used `requests` to scrape the GameStop revenue page.
+- Parsed HTML using `BeautifulSoup`.
+- Extracted the GameStop Quarterly Revenue table into a DataFrame (`gme_revenue`).
+- Cleaned data by removing `$` and `,` and dropping null values.
 
-### Tesla Stock Data and Revenue
-![Tesla Graph](Grafik%20tesla.png)
+### Question 5 & 6: Create Dashboards
+Used the `make_graph` function to plot:
 
-### GameStop Stock Data and Revenue
-![GameStop Graph](Grafik%20Gamestop.png)
+#### Tesla Stock Data and Revenue
+![Tesla Stock Graph](Grafik%20tesla.png)
 
----
+#### GameStop Stock Data and Revenue
+![GameStop Stock Graph](Grafik%20Gamestop.png)
 
-## Tools and Libraries Used
-- Python 3
-- yfinance
-- pandas
-- requests
-- BeautifulSoup
-- plotly
-- Jupyter Notebook
+## Requirements
+To run this project, install the following Python libraries:
+```bash
+pip install yfinance requests beautifulsoup4 html5lib pandas plotly
+```
 
 ## How to Run
-1. Install the dependencies:
-   ```bash
-   pip install yfinance pandas requests beautifulsoup4 plotly html5lib
-   ```
-2. Open the Jupyter Notebook:
-   ```bash
-   jupyter notebook Final\ Assignment-v2.ipynb
-   ```
-3. Run each cell in order to reproduce the results.
+1. Open the Jupyter Notebook.
+2. Run each cell in sequence from Question 1 to Question 7.
+3. The graphs will be displayed inline in the notebook.
+4. Final graphs are saved as `Grafik tesla.png` and `Grafik Gamestop.png`.
 
-## Author
-This notebook was created as part of the IBM Data Analyst Professional Certificate capstone project.
+## Output Summary
+- **Tesla**: Stock price shows rapid growth after 2019, while revenue also trends upward.
+- **GameStop**: Stock price exhibits a spike in early 2021 (short squeeze), revenue relatively stable but fluctuating seasonally.
+
+---
+**Author:** IBM Data Analyst Capstone Project  
+**Tools Used:** Python, Jupyter Notebook, yfinance, BeautifulSoup, pandas, plotly
